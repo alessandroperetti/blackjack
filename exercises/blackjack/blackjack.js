@@ -69,7 +69,8 @@
         const pointsHand1= this.points(hands1)
         const pointsHand2= this.points(hands2)
         console.log(pointsHand1, pointsHand2)
-        if(pointsHand1 > pointsHand2) return `p1`
-        else return `p2`
+        if(pointsHand1 === pointsHand2) return 'DRAW'
+        if(pointsHand1 > pointsHand2) return 'Player 1 - Win'
+        else return 'Player 2 - Win'
     }
 }
